@@ -23,7 +23,7 @@ jobs:
             path: my-tools
         
         - name: List Directory
-          run: ls -la
+          run: cd my-tools && ls -la
         
         - name: PWD
           run: pwd
