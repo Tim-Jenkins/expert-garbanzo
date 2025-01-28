@@ -1,0 +1,22 @@
+name: build
+
+on:
+    workflow_dispatch:
+
+jobs:
+    build:
+        name: build
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v4
+        
+        - name: List Directory
+          run: ls -la
+        
+        - uses: actions/checkout@v4
+          with:
+            repository: Tim-Jenkins/htpc-download-box
+        
+        - name: List Directory
+          run: ls -la
